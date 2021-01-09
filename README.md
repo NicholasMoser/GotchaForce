@@ -21,10 +21,18 @@ It counts down at the instruction 0x80055c00.
 
 ## Disable Wake Up Invincibility
 
+The Gecko Code is as simple as setting the static constant in memory from 60.0 to 0.
+
+[Example](https://imgur.com/a/xREgRq1)
+
+### USA
+
 ```gecko
 04437448 00000000
 ```
 
-The Gecko Code is as simple as setting the static constant in memory from 60.0 to 0.
+### PAL
 
-[Example](https://imgur.com/a/xREgRq1)
+```gecko
+04440aa8 00000000
+```
